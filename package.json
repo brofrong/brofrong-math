@@ -1,6 +1,6 @@
 {
   "name": "brofrong-math",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Super simple project to practice publishing to npm repository.",
   "author": "Brofrong <brofrong@yandex.ru>",
   "license": "MIT",
@@ -14,19 +14,23 @@
     "npm",
     "package"
   ],
-  "module": "lib/index.ts",
+  "main": "dist/lib/index.js",
+  "module": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
   "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
+    "build": "tsc -p tsconfig.build.json",
     "test": "bun test",
-    "prepublishOnly": "bun build"
+    "prepublishOnly": "bun run build"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
+    "@types/bun": "latest",
     "typescript": "^5"
   }
 }
