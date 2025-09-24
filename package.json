@@ -27,6 +27,8 @@
     "prepublishOnly": "bun run build"
   },
   "files": [
+    "test",
+    "lib",
     "dist"
   ],
   "devDependencies": {
