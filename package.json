@@ -4,6 +4,11 @@
   "description": "Super simple project to practice publishing to npm repository.",
   "author": "Brofrong <brofrong@yandex.ru>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brofrong/brofrong-math.git"
+  },
+  "homepage": "https://github.com/brofrong/brofrong-math#readme",
   "keywords": [
     "math",
     "npm",
@@ -11,6 +16,13 @@
   ],
   "module": "lib/index.ts",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "bun test",
+    "prepublishOnly": "bun build"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
