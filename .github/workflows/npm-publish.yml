@@ -22,7 +22,6 @@ jobs:
         with:
           registry-url: https://registry.npmjs.org/
       - run: bun i
-      - run: echo ${{ secrets.NPM_TOKEN }}
       - run: bun publish
         env:
           NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
