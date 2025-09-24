@@ -1,3 +1,3 @@
-export * from "./math/add";
-export * from "./math/div";
-export * from "./math/sub"; 
+export * from "./math/add.js";
+export * from "./math/div.js";
+export * from "./math/sub.js"; 
