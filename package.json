@@ -1,6 +1,6 @@
 {
   "name": "brofrong-math",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Super simple project to practice publishing to npm repository.",
   "author": "Brofrong <brofrong@yandex.ru>",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc",
     "test": "bun test",
     "prepublishOnly": "bun run build"
   },
