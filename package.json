@@ -1,41 +1,42 @@
 {
-  "name": "brofrong-math",
-  "version": "1.2.0",
-  "description": "Super simple project to practice publishing to npm repository.",
-  "author": "Brofrong <brofrong@yandex.ru>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/brofrong/brofrong-math.git"
-  },
-  "homepage": "https://github.com/brofrong/brofrong-math#readme",
-  "keywords": [
-    "math",
-    "npm",
-    "package"
-  ],
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
-  "engines": {
-    "node": ">=20.19.0"
-  },
-  "scripts": {
-    "build": "tsdown",
-    "test": "bun test",
-    "prepublishOnly": "bun run build",
-    "release": "release-it"
-  },
-  "files": [
-    "lib",
-    "test",
-    "dist"
-  ],
-  "devDependencies": {
-    "@types/bun": "latest",
-    "release-it": "^19.0.5",
-    "tsdown": "^0.15.4",
-    "typescript": "^5"
-  }
+	"name": "brofrong-math",
+	"version": "1.2.0",
+	"description": "Super simple project to practice publishing to npm repository.",
+	"author": "Brofrong <brofrong@yandex.ru>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brofrong/brofrong-math.git"
+	},
+	"homepage": "https://github.com/brofrong/brofrong-math#readme",
+	"keywords": [
+		"math",
+		"npm",
+		"package"
+	],
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"engines": {
+		"node": ">=20.19.0"
+	},
+	"scripts": {
+		"build": "tsdown",
+		"test": "bun test",
+		"prepublishOnly": "bun run build",
+		"release": "release-it"
+	},
+	"files": [
+		"lib",
+		"test",
+		"dist"
+	],
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4",
+		"@types/bun": "latest",
+		"release-it": "^19.0.5",
+		"tsdown": "^0.15.4",
+		"typescript": "^5"
+	}
 }
